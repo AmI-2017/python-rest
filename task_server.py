@@ -66,7 +66,7 @@ def insert_task():
         # insert in the database
         db_interaction.insert_task(text, urgent)
 
-        return Response(status=200)
+        return Response(status=201)
 
     # return an error in case of problems
     abort(403)
