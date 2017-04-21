@@ -38,7 +38,7 @@ def get_tasks():
         tasks.append(task)
 
     # return the task data
-    return jsonify({'tasks': task_list})
+    return jsonify({'tasks': tasks})
 
 
 @app.route('/api/v1.0/tasks/<int:task_id>', methods=['GET'])
